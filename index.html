@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mysterious Wizard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #0f0f1c, #1e1e30);
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            text-shadow: 0 0 15px #ffd700, 0 0 25px #ffeb3b, 0 0 35px #ffeb3b;
+            animation: pulse 1.5s infinite alternate;
+            margin-top: 20px;
+        }
+
+        .name {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.2rem;
+            margin-top: 10px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffc107, 0 0 20px #ffd54f;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes pulse {
+            from {
+                text-shadow: 0 0 15px #ffd700, 0 0 20px #ffeb3b;
+            }
+            to {
+                text-shadow: 0 0 20px #ffc107, 0 0 30px #ffc107;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Puzzle Box Styling */
+        .puzzle-box {
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Glowing Stars Background */
+        .sparkle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,223,0,0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+            .name {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sparkle" style="top: 20%; left: 30%;"></div>
+    <div class="sparkle" style="top: 50%; left: 60%;"></div>
+    <div class="sparkle" style="top: 80%; left: 20%;"></div>
+
+    <h1>The Mysterious Wizard</h1>
+    <div class="name">For Madhavi Ji</div>
+
+    <div class="puzzle-box">
+        <p>
+            "I am the boy who lived, a tale to unfold,<br>
+            With lightning above, and bravery bold.<br><br>
+            A train takes me where the castle is seen,<br>
+            With friends by my side, we fight the unseen,<br>
+            Defeating the dark with courage supreme.<br><br>
+            Who am I?"
+        </p>
+    </div>
+
+    <footer class="footer">
+        <p>Unlock the magic to begin your journey...</p>
+    </footer>
+</body>
+</html>
